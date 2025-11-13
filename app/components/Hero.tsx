@@ -25,7 +25,7 @@ const Hero = () => {
             <span className="text-white">Smarter SOPs, Better Leads,</span> <span className="text-purple-300">Powered By AI</span>
           </h1>
           <p className="text-gray-100 text-lg sm:text-xl lg:text-xl max-w-xl mx-auto lg:mx-0">
-            Your operations deserve more than spreadsheets and manual tasks. With InneraAI, AI becomes your silent partner — organizing, optimizing, and evolving with your business.
+            Your operations deserve more than spreadsheets and manual tasks. With InneraAI, <b>AI becomes your silent partner</b> — organizing, optimizing, and evolving with your business.
           </p>
           <Link
             href="/contact"

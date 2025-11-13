@@ -6,19 +6,33 @@ import { motion } from "framer-motion";
 const faqs = [
   {
     question: "What is InneraAI?",
-    answer: "InneraAI is an AI-powered automation platform that helps you organize, optimize, and evolve your business operations with minimal manual effort.",
+    answer:
+      "InneraAI is an AI-powered automation platform built for real estate and automotive businesses. We help you centralize operations, automate follow-ups, manage clients, and optimize sales processes — all from one intelligent system.",
   },
   {
     question: "How do I get started?",
-    answer: "Sign up for a plan that fits your needs. You’ll gain immediate access to AI-driven workflows and SOP templates tailored to your business.",
+    answer:
+      "Choose the plan that fits your business size. After signup, you’ll instantly access your dashboard with prebuilt automations for client management, sales tracking, and SOP templates customized for your industry.",
   },
   {
     question: "Can I switch plans later?",
-    answer: "Yes! You can upgrade or downgrade your subscription at any time. Your data and workflows remain intact.",
+    answer:
+      "Yes. You can upgrade or downgrade anytime without losing data or workflows. Whether your dealership or agency grows, InneraAI grows with you.",
+  },
+  {
+    question: "Do AI credits roll over?",
+    answer:
+      "Yes. Any unused AI credits can roll over to the next month depending on your plan — so you only pay for what you use. You can also purchase more credits anytime for busy sales periods or marketing campaigns.",
   },
   {
     question: "Is my data secure?",
-    answer: "Absolutely. InneraAI uses industry-standard encryption and secure cloud storage to ensure your business data is safe at all times.",
+    answer:
+      "Absolutely. We use industry-grade encryption and secure cloud infrastructure to protect sensitive business data, client information, and transaction records at all times.",
+  },
+  {
+    question: "Who is InneraAI for?",
+    answer:
+      "InneraAI is built for real estate agencies, automotive dealers, and sales teams that want to automate client management, reduce manual work, and scale operations without adding complexity.",
   },
 ];
 
@@ -49,7 +63,7 @@ export default function FAQSection() {
               <AccordionTrigger className="text-white text-lg font-semibold px-6 py-4 flex justify-between items-center">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-white/70 px-6 pb-4 text-sm">
+              <AccordionContent className="text-white/85 px-6 pb-4 text-sm">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

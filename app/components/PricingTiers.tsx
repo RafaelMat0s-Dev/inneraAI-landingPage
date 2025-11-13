@@ -9,21 +9,30 @@ const tiers = [
     name: "Starter",
     monthly: 25,
     yearly: 20,
-    description: "For individuals just starting to leverage automation.",
-    benefits: ["Basic workflows", "Email support", "1 Workspace", "Up to 3 automations"],
+    description: "Ideal for individuals or small projects starting to integrate AI automation.",
+    benefits: [
+      "1,000 AI Credits / month",
+      "Essential AI workflows",
+      "Email support",
+      "1 Workspace",
+      "Up to 3 automations",
+      "Buy extra credits anytime",
+    ],
     ribbon: "10% Off",
   },
   {
     name: "Growth",
     monthly: 50,
     yearly: 40,
-    description: "For growing businesses that need scalable efficiency.",
+    description: "For teams ready to scale operations with smarter automation and flexible AI usage.",
     benefits: [
-      "Advanced workflows",
-      "Priority support",
+      "5,000 AI Credits / month",
+      "Advanced AI workflows that adapt to your business",
+      "Priority human + AI support",
       "Multiple Workspaces",
-      "AI Assistance on tasks",
+      "AI Assistant for task execution",
       "Up to 15 automations",
+      "Purchase extra credits as needed",
     ],
     ribbon: "Most Popular",
   },
@@ -31,27 +40,28 @@ const tiers = [
     name: "Pro",
     monthly: 100,
     yearly: 80,
-    description: "For teams that depend on automation to operate smoothly.",
+    description: "For companies that rely on automation daily and want full control over AI scaling.",
     benefits: [
-      "Unlimited Workspaces",
-      "Custom integrations",
-      "Dedicated strategy calls",
-      "AI Agent Deployment",
-      "Advanced SOP library",
-      "Unlimited automations",
+      "15,000 AI Credits / month",
+      "Unlimited Workspaces & automations",
+      "Custom integrations tailored to your systems",
+      "1:1 strategy calls with our automation experts",
+      "AI Agent Deployment for complex workflows",
+      "Access to advanced SOP libraries",
+      "Extra credits available anytime",
     ],
   },
   {
     name: "Enterprise",
     monthly: "Custom",
     yearly: "Custom",
-    description: "For companies requiring full automation infrastructure.",
+    description: "For organizations ready to build fully autonomous AI-driven operations.",
     benefits: [
-      "Full AI Ops automation support",
-      "Dedicated engineers",
-      "Infrastructure scaling",
-      "Custom system architecture",
-      "On-site deployment options",
+      "Custom AI Credit packages",
+      "Dedicated automation engineers",
+      "Full AI Ops infrastructure support",
+      "Private integrations & scaling",
+      "White-glove onboarding & on-site options",
     ],
   },
 ];
@@ -117,7 +127,7 @@ export default function PricingSection() {
 
                 <ul className="text-sm text-white/80 space-y-2 mb-6">
                   {tier.benefits.map((b) => (
-                    <li key={b} className="flex items-center gap-2">
+                    <li key={b} className="items-center gap-1">
                       <span className="text-purple-300">•</span> {b}
                     </li>
                   ))}

@@ -12,7 +12,7 @@ const benefits = [
   {
     emoji: "🎯",
     title: "Clear Direction",
-    desc: "Structured workflows that eliminate confusion and decision fatigue.",
+    desc: "Structured AI Powered workflows that eliminate confusion and decision fatigue.",
   },
   {
     emoji: "📈",
@@ -24,6 +24,11 @@ const benefits = [
     title: "Aligned Teamwork",
     desc: "Everyone knows what matters and executes without bottlenecks.",
   },
+  {
+    "emoji": "⏱️",
+    "title": "Time Saved",
+    "desc": "Automate the busywork and reclaim hours every week for what truly drives growth."
+  }
 ];
 
 export default function BenefitsSection() {
@@ -52,6 +57,7 @@ export default function BenefitsSection() {
                 p-6 rounded-2xl backdrop-blur-xl bg-white/10 border border-white/15 shadow-lg
                 hover:scale-[1.04] transition-transform
                 ${i % 2 === 1 ? "lg:translate-y-10" : ""}
+                ${benefits.length % 4 === 1 && i === benefits.length - 1 ? "lg:col-span-4" : ""}
               `}
               initial={{ opacity: 0, y: 40, scale: 0.92 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}

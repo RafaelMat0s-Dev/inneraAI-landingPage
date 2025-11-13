@@ -4,6 +4,8 @@ import BackgroundShapes from "./components/BackgroundShapes";
 import BenefitsSection from "./components/BenefitsSection";
 import PricingTiers from "./components/PricingTiers";
 import FAQSection from "./components/FAQ";
+import ContactSection from "./components/ContactSection";
+import FooterSection from "./components/FooterSection";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
           <BenefitsSection/>
           <PricingTiers/>
           <FAQSection/>
+          <ContactSection/>
+          <FooterSection/>
 
     </>
   );
