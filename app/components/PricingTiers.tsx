@@ -136,9 +136,9 @@ export default function PricingSection() {
 
               {/* Button aligned at bottom */}
               <div className="mt-auto">
-                <button className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 font-medium hover:opacity-90 transition">
-                  Get Started
-                </button>
+                   <a href="#contactform" className="w-full py-3 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 font-medium hover:opacity-90 transition text-center block">
+                        Get Started
+                  </a>
               </div>
             </motion.div>
           ))}

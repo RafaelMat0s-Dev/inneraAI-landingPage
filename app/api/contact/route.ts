@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { google } from "googleapis";
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
-const SPREADSHEET_ID = process.env.GOOGLE_SHEETS_ID; // also moved to env
+const SPREADSHEET_ID = process.env.GOOGLE_SHEETS_ID; 
 
 // -------------------------------
 // Types

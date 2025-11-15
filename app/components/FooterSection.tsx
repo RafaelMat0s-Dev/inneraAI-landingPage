@@ -14,7 +14,7 @@ export default function FooterSection() {
           transition={{ duration: 0.6 }}
           className="text-white/70 text-center md:text-left"
         >
-          <p>© {new Date().getFullYear()} YourCompany. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} InneraAI. All rights reserved.</p>
         </motion.div>
 
         <motion.div
@@ -24,7 +24,7 @@ export default function FooterSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex items-center gap-4"
         >
-          <a href="#" className="hover:text-purple-400 transition-all">
+          <a href="https://www.instagram.com/innera.ai/" target="_blank" className="hover:text-purple-400 transition-all">
             <Instagram className="w-5 h-5" />
           </a>
         </motion.div>
