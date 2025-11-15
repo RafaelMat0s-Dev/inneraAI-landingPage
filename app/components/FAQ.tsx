@@ -38,7 +38,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="relative w-full py-28 px-6 bg-gradient-to-b from-indigo-900/10 to-indigo-900/30 overflow-hidden">
+    <section id="faq" className="relative w-full py-28 px-6 bg-gradient-to-b from-indigo-900/10 to-indigo-900/30 overflow-hidden">
       <div className="max-w-4xl mx-auto text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Frequently Asked Questions</h2>
         <p className="text-lg text-white/70">

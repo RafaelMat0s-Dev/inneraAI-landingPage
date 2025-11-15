@@ -33,7 +33,7 @@ const benefits = [
 
 export default function BenefitsSection() {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section id="product" className="relative py-32 overflow-hidden">
       {/* Background Glow */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-purple-400/10 to-indigo-500/10 blur-3xl"></div>
 

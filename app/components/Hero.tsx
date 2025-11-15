@@ -28,7 +28,7 @@ const Hero = () => {
             Your operations deserve more than spreadsheets and manual tasks. With InneraAI, <b>AI becomes your silent partner</b> — organizing, optimizing, and evolving with your business.
           </p>
           <Link
-            href="/contact"
+            href="#contactform"
             className="inline-block bg-purple-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-purple-700 transition"
           >
             Talk to an AI Specialist Now

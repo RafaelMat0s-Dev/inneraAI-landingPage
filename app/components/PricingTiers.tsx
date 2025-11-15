@@ -69,7 +69,7 @@ const tiers = [
 export default function PricingSection() {
   const [annual, setAnnual] = useState(false);
   return (
-    <section className="relative w-full py-28 px-6 overflow-hidden">
+    <section id="pricing" className="relative w-full py-28 px-6 overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-white">
           Choose Your Plan

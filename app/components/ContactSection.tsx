@@ -16,14 +16,32 @@ export default function ContactSection() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Submitted data:", formData);
-    alert("Message sent! (This is just a demo)");
-  };
+  const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault();
+      try {
+            const res = await fetch("/api/contact", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(formData),
+        });
+
+        const result = await res.json();
+        if (result.success) {
+          alert("Message sent!");
+          setFormData({ name: "", email: "", company: "", phone: "", message: "" });
+        } else {
+          alert("Error sending message. Try again.");
+          console.error(result.error);
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Error sending message. Try again.");
+      }
+};
+
 
   return (
-    <section className="relative py-28 px-6 w-full overflow-hidden">
+    <section id="contactform" className="relative py-28 px-6 w-full overflow-hidden">
       {/* Background Gradient Glow */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute w-[600px] h-[600px] bg-purple-600/20 blur-[160px] rounded-full -top-40 -left-40"></div>
