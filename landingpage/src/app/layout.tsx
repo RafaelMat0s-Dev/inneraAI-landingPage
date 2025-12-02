@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "Rafael Matos| Desenvolvedor Web Estratégico",
     template: "%s | Rafael Matos"
   },
-  description: "Especialista em Next.js e SEO. Ajudo empresas a faturar mais através de websites de alta performance e design narrativo.",
+  description: "Especialista em NextJS e SEO. Ajudo empresas a faturar mais através de websites de alta performance e design narrativo.",
   metadataBase: new URL('https://inneraai.com'),
   openGraph: {
     type: 'website',
